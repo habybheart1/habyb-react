@@ -27,9 +27,8 @@ export default function Weather() {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;
     axios.get(url).then(displayInfo);
   }
-
   return (
-    <div class="container-fluid border border-success m-5">
+    <div className="container">
       <form onSubmit={handleSubmit}>
         <input
           type="Search"
@@ -43,7 +42,8 @@ export default function Weather() {
       </form>
       <h1 class="text-uppercase">{city}</h1>
       <ul>
-        <li>Tuesday, 25th Jan. 2023</li>
+        <li>FRI, 17th, February 2023</li>
+
         <li>{desc}</li>
       </ul>
       <div className="row">
@@ -60,14 +60,6 @@ export default function Weather() {
             <li>Wind: {wind}Km/h</li>
             <li>Humidity: {humidity}%</li>
           </ul>
-        </div>
-        <div className="row">
-          <div className="col-2">1</div>
-          <div className="col-2">2</div>
-          <div className="col-2">3</div>
-          <div className="col-2">4</div>
-          <div className="col-2">5</div>
-          <div className="col-2">6</div>
         </div>
       </div>
       <footer>

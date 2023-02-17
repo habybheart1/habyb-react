@@ -8,6 +8,17 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.App {
+  width: 60%;
+}
+.container {
+  border: 3px solid #060b0f;
+  padding: 15px;
+  margin: 40px auto;
+  border-radius: 50px;
+  max-width: 800px;
+  background-image: url("https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?cs=srgb&dl=pexels-pixabay-209831.jpg&fm=jpg");
+}
 .App li {
   list-style: none;
 }
@@ -16,7 +27,7 @@
 }
 h1 {
   color: #503030;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 100;
   line-height: 28px;
   margin: 20px;
