@@ -50,7 +50,8 @@ export default function Weather() {
         <div className="col-sm-6">
           <ul>
             <li>
-              <img src={icon} alt={desc} /> {temp}℃
+              <img src={icon} alt={desc} /> <span id="temperature">{temp}</span>
+              <span id="units">℃</span>
             </li>
           </ul>
         </div>
